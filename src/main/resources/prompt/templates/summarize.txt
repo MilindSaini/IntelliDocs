@@ -1,0 +1,6 @@
+Summarize the following content into concise bullet points.
+
+Content:
+{{content}}
+
+Summary:

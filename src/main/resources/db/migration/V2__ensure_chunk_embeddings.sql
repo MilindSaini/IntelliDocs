@@ -1,0 +1,7 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE IF NOT EXISTS chunk_embeddings (
+    chunk_id UUID PRIMARY KEY REFERENCES document_chunks(id) ON DELETE CASCADE,
+    embedding VECTOR(1536) NOT NULL,
+    model VARCHAR(128) NOT NULL
+);
